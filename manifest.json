@@ -5,7 +5,7 @@
   "version": "1.1",
   "browser_action": {
     "default_icon": "128.png",
-    "default_popup": "popup.html",
+    //"default_popup": "popup.html",
     "default_title": "Click here!"
   },
   "icons": {
@@ -19,16 +19,32 @@
   //       }  
   //   ],  
   "permissions": [
+  	"tabs",
     "unlimitedStorage",
     "notifications",
     "activeTab",
+    "declarativeContent",
     "https://ajax.googleapis.com/"
-  ]
-
-  // "background": {
-  //   "scripts": [
-  //     "event.js", "content_script.js"
-  //   ],
-  //   "persistent": false
-  // }
+  ],
+  // "_execute_browser_action": {  
+  //   "suggested_key": {  
+  //     "windows": "Ctrl+Shift+Y",  
+  //     "mac": "Command+Shift+Y",  
+  //     "chromeos": "Ctrl+Shift+U",  
+  //     "linux": "Ctrl+Shift+J"  
+  //   }  
+  // },
+  "commands": {  
+    "switch-fb-bg": {  
+      "suggested_key": {  
+        "default": "Ctrl+Shift+Y",  
+        "mac": "MacCtrl+Shift+Y"  
+      },  
+      "description": "切換FB的背景顏色"  
+    }  
+  },  
+  "background" : {  
+    "scripts" : ["event.js"],  
+    "persistent" : false  
+  }  
 }
