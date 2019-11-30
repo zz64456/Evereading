@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      button {
-        height: 150px;
-        width: 100px;
-        outline: none;
-      }
-    </style>
-  </head>
-  <body>
-    <button id="changeColor">Change</button>
-    <script src="popup.js"></script>
-  </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.css">
+    <link rel="stylesheet" type="text/css" href="extension.css">
+</head>
+
+<body>
+    <div class="row demo-tiles">
+        <div class="col-xs-3">
+            <div class="tile">
+                <img src="./128.png" alt="Evereading" class="tile-image big-illustration">
+                <h3 class="tile-title">羅拉拉的Extension</h3>
+                <p>我是前端我驕傲</p>
+                <a id="button" class="btn btn-primary btn-large btn-block" href="https://github.com/lauraluo"><span class="fui-home"></span>羅拉拉的GitHub</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="popup.js"></script>
+</body>
 </html>
